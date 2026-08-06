@@ -460,3 +460,56 @@ font-size:20
     cursor:pointer;
 
 }
+/* ===== ADMIN PANEL ===== */
+
+.admin-panel{
+    margin:20px;
+    padding:20px;
+    background:#171717;
+    border-radius:20px;
+    border:1px solid #333;
+}
+
+.admin-panel h2{
+    color:#ff2d2d;
+    margin-bottom:15px;
+}
+
+.admin-panel input,
+.admin-panel textarea{
+
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:12px;
+    outline:none;
+
+}
+
+.admin-panel textarea{
+    height:120px;
+    resize:none;
+}
+
+.admin-panel button{
+
+    width:100%;
+    padding:14px;
+    background:#ff2d2d;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.admin-panel button:hover{
+
+    transform:scale(1.03);
+
+}
