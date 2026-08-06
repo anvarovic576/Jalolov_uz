@@ -494,3 +494,70 @@ loginBox.style.display="none";
 });
 
 }
+// ===== ADMIN NEWS ADD =====
+
+const addNewsBtn = document.querySelector("#addNews");
+
+
+if(addNewsBtn){
+
+addNewsBtn.addEventListener("click",()=>{
+
+
+const title = document.querySelector("#newsTitle").value;
+
+const text = document.querySelector("#newsText").value;
+
+const image = document.querySelector("#newsImage").value;
+
+
+if(title && text){
+
+
+const newsSection = document.querySelector(".news");
+
+
+const newNews = document.createElement("div");
+
+newNews.className = "news-card";
+
+
+newNews.innerHTML = `
+
+${image ? `<img src="${image}">` : ""}
+
+<div>
+
+<h3>${title}</h3>
+
+<p>${text}</p>
+
+</div>
+
+`;
+
+
+newsSection.prepend(newNews);
+
+
+document.querySelector("#newsTitle").value="";
+document.querySelector("#newsText").value="";
+document.querySelector("#newsImage").value="";
+
+
+alert("✅ Yangilik qo'shildi!");
+
+}
+
+
+else{
+
+alert("Sarlavha va matn kiriting!");
+
+}
+
+
+});
+
+
+}
