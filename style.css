@@ -107,3 +107,126 @@ img{
 .hero-content p{
     color:#bdbdbd;
 }
+/* ===== TREND ===== */
+
+.trend{
+    padding:20px;
+}
+
+.trend h2{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.trend-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.card{
+    background:#171717;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    height:140px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:12px;
+    font-size:17px;
+}
+
+.card p{
+    padding:0 12px 15px;
+    color:#aaa;
+}
+
+/* ===== SHORTS ===== */
+
+.shorts{
+    padding:20px;
+}
+
+.shorts h2{
+    margin-bottom:15px;
+}
+
+.shorts-box{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+}
+
+.short-card{
+    min-width:130px;
+    height:220px;
+    background:#202020;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.short-card:hover{
+    background:#ff2d2d;
+}
+
+/* ===== NEWS ===== */
+
+.news{
+    padding:20px;
+}
+
+.news h2{
+    margin-bottom:15px;
+}
+
+.news-card{
+    display:flex;
+    gap:15px;
+    background:#171717;
+    border-radius:18px;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.news-card img{
+    width:110px;
+    height:90px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.news-card h3{
+    margin-bottom:8px;
+}
+
+.news-card p{
+    color:#aaa;
+}
+
+/* ===== BOTTOM MENU ===== */
+
+.bottom-nav{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background:#111;
+    border-top:1px solid #222;
+    display:flex;
+    justify-content:space-around;
+    padding:10px 0;
+}
