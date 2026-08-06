@@ -285,3 +285,54 @@ card.style.display="none";
 
 
 });
+// ===== DARK / LIGHT MODE =====
+
+const modeButton = document.createElement("button");
+
+modeButton.innerHTML = "🌙";
+
+modeButton.style.cssText = `
+position:fixed;
+right:20px;
+top:130px;
+width:45px;
+height:45px;
+border:none;
+border-radius:50%;
+background:#ff2d2d;
+color:white;
+font-size:20px;
+cursor:pointer;
+z-index:9999;
+`;
+
+document.body.appendChild(modeButton);
+
+
+let lightMode = false;
+
+
+modeButton.addEventListener("click",()=>{
+
+lightMode = !lightMode;
+
+
+if(lightMode){
+
+document.body.style.background="#f5f5f5";
+document.body.style.color="#111";
+
+modeButton.innerHTML="☀️";
+
+
+}else{
+
+document.body.style.background="#0b0b0b";
+document.body.style.color="#fff";
+
+modeButton.innerHTML="🌙";
+
+}
+
+
+});
