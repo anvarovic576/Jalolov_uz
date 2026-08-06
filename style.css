@@ -614,3 +614,78 @@ font-size:20
     0 12px 30px rgba(255,0,0,.4);
 
 }
+/* ===== PREMIUM ADMIN STYLE ===== */
+
+.admin-panel{
+
+    margin:20px;
+    padding:30px;
+
+    background:#f8f8f8;
+
+    border-radius:28px;
+
+    border:1px solid #ddd;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+.admin-panel h2{
+
+    color:#222;
+
+    font-size:26px;
+
+}
+
+
+.admin-panel input,
+.admin-panel textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:15px;
+
+    background:white;
+
+    color:#222;
+
+    border:1px solid #ddd;
+
+    border-radius:16px;
+
+}
+
+
+.admin-panel input:focus,
+.admin-panel textarea:focus{
+
+    border-color:#c9a227;
+
+}
+
+
+.admin-panel button{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#c9a227;
+
+    color:white;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+}
