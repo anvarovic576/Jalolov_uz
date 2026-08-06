@@ -878,3 +878,96 @@ cursor:pointer;
 font-size:16px;
 
 }
+/* ===== PREMIUM TREND ===== */
+
+.trend{
+
+margin:20px;
+
+}
+
+.trend h2{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.trend-grid{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.trend-card{
+
+background:#181818;
+
+border-radius:22px;
+
+overflow:hidden;
+
+transition:.3s;
+
+}
+
+.trend-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.trend-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.trend-info{
+
+padding:18px;
+
+}
+
+.trend-info span{
+
+display:inline-block;
+
+padding:6px 12px;
+
+background:#2563eb;
+
+color:white;
+
+border-radius:30px;
+
+font-size:12px;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+.trend-info h3{
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+.trend-info p{
+
+color:#aaa;
+
+}
