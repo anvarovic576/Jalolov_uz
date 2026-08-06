@@ -208,3 +208,80 @@ if (user) {
         alert("Profil bo'limi tez orada tayyor bo'ladi.");
     });
 }
+// ===== JALOLOV_UZ SEARCH =====
+
+const searchInput = document.createElement("input");
+
+searchInput.placeholder = "Yangilik qidirish...";
+
+searchInput.style.cssText = `
+position:fixed;
+top:75px;
+left:20px;
+right:20px;
+padding:15px;
+border-radius:15px;
+border:none;
+background:#222;
+color:white;
+font-size:16px;
+display:none;
+z-index:9999;
+`;
+
+document.body.appendChild(searchInput);
+
+
+const searchButton = document.querySelector(".fa-magnifying-glass");
+
+
+if(searchButton){
+
+searchButton.addEventListener("click",()=>{
+
+if(searchInput.style.display==="none"){
+
+searchInput.style.display="block";
+searchInput.focus();
+
+}else{
+
+searchInput.style.display="none";
+
+}
+
+});
+
+}
+
+
+// Yangiliklarni qidirish
+
+searchInput.addEventListener("input",()=>{
+
+let text = searchInput.value.toLowerCase();
+
+const cards = document.querySelectorAll(
+".news-card, .card"
+);
+
+
+cards.forEach(card=>{
+
+let content = card.innerText.toLowerCase();
+
+
+if(content.includes(text)){
+
+card.style.display="flex";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+
+});
