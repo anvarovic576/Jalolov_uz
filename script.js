@@ -133,3 +133,78 @@ item.style.border="1px solid red";
 // ===== AUTO YEAR =====
 
 console.log("© "+new Date().getFullYear()+" Jalolov_uz");
+// ===== BACK TO TOP =====
+
+const topBtn = document.createElement("button");
+topBtn.innerHTML = "⬆";
+topBtn.id = "topBtn";
+
+document.body.appendChild(topBtn);
+
+topBtn.style.cssText = `
+position:fixed;
+right:20px;
+bottom:90px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#ff2d2d;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 0 20px rgba(255,45,45,.4);
+z-index:9999;
+`;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
+
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+// ===== SEARCH =====
+
+const searchIcon = document.querySelector(".fa-magnifying-glass");
+
+if (searchIcon) {
+    searchIcon.addEventListener("click", () => {
+        const text = prompt("Qidiruv:");
+        if (text) {
+            alert("Siz qidirdingiz: " + text);
+        }
+    });
+}
+
+
+// ===== BELL =====
+
+const bell = document.querySelector(".fa-bell");
+
+if (bell) {
+    bell.addEventListener("click", () => {
+        alert("Hozircha yangi bildirishnoma yo'q.");
+    });
+}
+
+
+// ===== PROFILE =====
+
+const user = document.querySelector(".fa-user");
+
+if (user) {
+    user.addEventListener("click", () => {
+        alert("Profil bo'limi tez orada tayyor bo'ladi.");
+    });
+}
