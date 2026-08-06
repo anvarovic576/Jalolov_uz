@@ -494,7 +494,10 @@ loginBox.style.display="none";
 });
 
 }
-// ===== ADMIN NEWS ADD =====
+// ===== ADMIN PANEL PASSWORD =====
+
+const ADMIN_PASSWORD = "12345";
+
 
 const addNewsBtn = document.querySelector("#addNews");
 
@@ -502,6 +505,18 @@ const addNewsBtn = document.querySelector("#addNews");
 if(addNewsBtn){
 
 addNewsBtn.addEventListener("click",()=>{
+
+
+const pass = document.querySelector("#adminPass").value;
+
+
+if(pass !== ADMIN_PASSWORD){
+
+alert("❌ Parol noto'g'ri!");
+
+return;
+
+}
 
 
 const title = document.querySelector("#newsTitle").value;
@@ -518,6 +533,7 @@ const newsSection = document.querySelector(".news");
 
 
 const newNews = document.createElement("div");
+
 
 newNews.className = "news-card";
 
@@ -540,24 +556,18 @@ ${image ? `<img src="${image}">` : ""}
 newsSection.prepend(newNews);
 
 
-document.querySelector("#newsTitle").value="";
-document.querySelector("#newsText").value="";
-document.querySelector("#newsImage").value="";
-
-
 alert("✅ Yangilik qo'shildi!");
+
 
 }
 
-
 else{
 
-alert("Sarlavha va matn kiriting!");
+alert("Ma'lumotlarni to'ldiring!");
 
 }
 
 
 });
-
 
 }
