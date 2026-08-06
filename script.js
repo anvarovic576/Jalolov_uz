@@ -336,3 +336,41 @@ modeButton.innerHTML="🌙";
 
 
 });
+// ===== LIKE SYSTEM =====
+
+const newsCards = document.querySelectorAll(".news-card, .card");
+
+
+newsCards.forEach(card => {
+
+    const likeBtn = document.createElement("button");
+
+    likeBtn.innerHTML = "❤️ 0";
+
+    likeBtn.style.cssText = `
+    margin:10px;
+    padding:8px 14px;
+    border:none;
+    border-radius:20px;
+    background:#ff2d2d;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    `;
+
+
+    let likes = 0;
+
+
+    likeBtn.addEventListener("click",()=>{
+
+        likes++;
+
+        likeBtn.innerHTML = "❤️ " + likes;
+
+    });
+
+
+    card.appendChild(likeBtn);
+
+});
