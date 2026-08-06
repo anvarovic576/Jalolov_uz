@@ -374,3 +374,57 @@ newsCards.forEach(card => {
     card.appendChild(likeBtn);
 
 });
+// ===== COMMENT SYSTEM =====
+
+const commentCards = document.querySelectorAll(".news-card, .card");
+
+
+commentCards.forEach(card => {
+
+    const commentBox = document.createElement("div");
+
+    commentBox.innerHTML = `
+        <input class="comment-input" placeholder="Izoh yozing...">
+        <button class="comment-btn">Yuborish</button>
+        <div class="comments"></div>
+    `;
+
+
+    commentBox.style.cssText = `
+    margin:10px;
+    `;
+
+
+    card.appendChild(commentBox);
+
+
+    const input = commentBox.querySelector(".comment-input");
+    const button = commentBox.querySelector(".comment-btn");
+    const comments = commentBox.querySelector(".comments");
+
+
+    button.addEventListener("click",()=>{
+
+        if(input.value.trim() !== ""){
+
+            const newComment = document.createElement("p");
+
+            newComment.innerHTML = "💬 " + input.value;
+
+            newComment.style.cssText = `
+            background:#222;
+            padding:8px;
+            border-radius:10px;
+            margin-top:8px;
+            `;
+
+            comments.appendChild(newComment);
+
+            input.value="";
+
+        }
+
+    });
+
+
+});
