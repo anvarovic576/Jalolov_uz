@@ -457,3 +457,40 @@ alert("🎥 Shorts video #" + (index+1));
 
 
 });
+// ===== LOGIN SYSTEM =====
+
+const userIcon = document.querySelector(".fa-user");
+
+const loginBox = document.querySelector("#loginBox");
+
+const loginBtn = document.querySelector("#loginBtn");
+
+
+if(userIcon){
+
+userIcon.addEventListener("click",()=>{
+
+loginBox.style.display="block";
+
+});
+
+}
+
+
+if(loginBtn){
+
+loginBtn.addEventListener("click",()=>{
+
+let name=document.querySelector("#username").value;
+
+if(name){
+
+alert("Xush kelibsiz, "+name+"!");
+
+loginBox.style.display="none";
+
+}
+
+});
+
+}
