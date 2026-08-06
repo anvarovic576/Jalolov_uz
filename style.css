@@ -1,0 +1,109 @@
+/* ===== JALOLOV.UZ ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+    background:#111;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:700;
+    color:#ff2d2d;
+}
+
+.header-icons{
+    display:flex;
+    gap:18px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.menu{
+    display:flex;
+    overflow:auto;
+    gap:18px;
+    padding:15px;
+    background:#151515;
+}
+
+.menu a{
+    white-space:nowrap;
+    font-size:15px;
+    font-weight:600;
+}
+
+.menu a:hover{
+    color:#ff2d2d;
+}
+
+.breaking{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:12px 15px;
+    background:#c40000;
+    font-weight:700;
+}
+
+.breaking-title{
+    white-space:nowrap;
+}
+
+.hero{
+    margin:18px;
+    background:#161616;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,0,0,.15);
+}
+
+.hero img{
+    height:230px;
+    object-fit:cover;
+}
+
+.hero-content{
+    padding:18px;
+}
+
+.hero-content h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    color:#bdbdbd;
+}
