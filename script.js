@@ -428,3 +428,32 @@ commentCards.forEach(card => {
 
 
 });
+// ===== SHORTS VIEW SYSTEM =====
+
+const shortCards = document.querySelectorAll(".short-card");
+
+
+shortCards.forEach((video,index)=>{
+
+let views = 0;
+
+
+const viewText = document.createElement("p");
+
+viewText.innerHTML = "👁️ 0 ko'rish";
+
+video.appendChild(viewText);
+
+
+video.addEventListener("click",()=>{
+
+views++;
+
+viewText.innerHTML = "👁️ " + views + " ko'rish";
+
+alert("🎥 Shorts video #" + (index+1));
+
+});
+
+
+});
