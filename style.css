@@ -513,3 +513,122 @@ font-size:20
     transform:scale(1.03);
 
 }
+/* ===== JALOLOV_UZ PRO ADMIN ===== */
+
+.admin-panel{
+
+    margin:20px;
+
+    padding:30px;
+
+    background:#101010;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5);
+
+}
+
+
+.admin-panel h2{
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+.admin-panel h2 span{
+
+    color:#ff2d2d;
+
+}
+
+
+.admin-panel input,
+.admin-panel textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:16px;
+
+    background:#1c1c1c;
+
+    color:white;
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+.admin-panel input:focus,
+.admin-panel textarea:focus{
+
+    border-color:#ff2d2d;
+
+    box-shadow:
+    0 0 15px rgba(255,45,45,.25);
+
+}
+
+
+.admin-panel textarea{
+
+    height:150px;
+
+}
+
+
+.admin-panel button{
+
+    width:100%;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #ff0000,
+    #ff6a00
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.admin-panel button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 12px 30px rgba(255,0,0,.4);
+
+}
