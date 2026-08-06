@@ -57,3 +57,79 @@ bottomLinks.forEach(link => {
 });
 
 console.log("Jalolov_uz ishga tushdi.");
+// ===== SCROLL ANIMATION =====
+
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector(".header");
+
+    if(window.scrollY > 30){
+
+        header.style.background = "#000";
+        header.style.boxShadow = "0 5px 20px rgba(255,0,0,.25)";
+
+    }else{
+
+        header.style.background = "#111";
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+
+// ===== IMAGE ZOOM =====
+
+const images = document.querySelectorAll("img");
+
+images.forEach(img=>{
+
+img.addEventListener("mouseenter",()=>{
+
+img.style.transform="scale(1.05)";
+img.style.transition=".4s";
+
+});
+
+img.addEventListener("mouseleave",()=>{
+
+img.style.transform="scale(1)";
+
+});
+
+});
+
+
+// ===== SHORTS CLICK =====
+
+const shorts=document.querySelectorAll(".short-card");
+
+shorts.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+alert("Video tez orada qo'shiladi.");
+
+});
+
+});
+
+
+// ===== NEWS CLICK =====
+
+const news=document.querySelectorAll(".news-card");
+
+news.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.style.border="1px solid red";
+
+});
+
+});
+
+
+// ===== AUTO YEAR =====
+
+console.log("© "+new Date().getFullYear()+" Jalolov_uz");
