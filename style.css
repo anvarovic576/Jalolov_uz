@@ -304,37 +304,38 @@ html{
     transform:translateY(-4px);
 }
 
-/* Responsive */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 .hero img{
-height:200px;
+    height:200px;
 }
 
 .hero-content h1{
-font-size:22px;
+    font-size:22px;
 }
 
 .trend-box{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 }
 
 .news-card{
-flex-direction:column;
+    flex-direction:column;
 }
 
 .news-card img{
-width:100%;
-height:180px;
+    width:100%;
+    height:180px;
 }
 
 .menu{
-gap:14px;
+    gap:14px;
 }
 
 .logo{
-font-size:20
+    font-size:20px;
+}
+
+}
 /* ===== SHORTS PREMIUM ===== */
 
 .shorts-box{
