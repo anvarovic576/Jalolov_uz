@@ -506,3 +506,42 @@ img{
 .stat-card p{
     color:#bbb;
 }
+#loader{
+    position:fixed;
+    inset:0;
+    background:#090909;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.spinner{
+    width:55px;
+    height:55px;
+    border:5px solid #333;
+    border-top:5px solid #ff2d2d;
+    border-radius:50%;
+    animation:spin .8s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:90px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#ff2d2d;
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
